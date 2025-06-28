@@ -1,0 +1,10 @@
+<suite name="UI Test Suite">
+    <listeners>
+        <listener class-name="utils.ExtentTestListener" />
+    </listeners>
+    <test name="Login Tests">
+        <classes>
+            <class name="tests.LoginTest" />
+        </classes>
+    </test>
+</suite>
