@@ -7,4 +7,9 @@
             <class name="tests.LoginTest" />
         </classes>
     </test>
+    <test name="LoginAndSearch">
+        <classes>
+            <class name="tests.LoginAndSearchTest"/>
+        </classes>
+    </test>
 </suite>
