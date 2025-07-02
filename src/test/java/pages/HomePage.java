@@ -12,6 +12,8 @@ public class HomePage {
 
 
     // Locators
+    private By productTitle = By.className("title");
+    private By firstProduct = By.cssSelector(".inventory_item:first-child .inventory_item_name");
     private By welcomeMsg = By.id("welcome");
     private By logoutBtn = By.id("logout");
     private By settingsLink = By.id("settings");
@@ -42,5 +44,13 @@ public class HomePage {
 
     public boolean isAtHomePage() {
         return driver.getCurrentUrl().contains("home");
+    }
+
+    public boolean isOnProductsPage() {
+        return driver.findElement(productTitle).getText().equalsIgnoreCase("Products");
+    }
+
+    public void clickFirstProduct() {
+        driver.findElement(firstProduct).click();
     }
 }
